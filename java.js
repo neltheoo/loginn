@@ -18,7 +18,7 @@ document.querySelector("#login").addEventListener("submit", function (event) {
     alerta.textContent =
       "sucesso: Todos os campos foram preenchidos corretamente!";
     alerta.className = "success";
-  } else if (user !== "admin" && password !== "12345") {
+  } else if (user !== "admin" && password !== "12345")sss
     alerta.textContent = "Errado: Usuário ou senha está incorreto";
     alerta.className = "error";
   } else {
