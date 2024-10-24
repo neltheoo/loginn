@@ -1,0 +1,126 @@
+/* reseta o meu css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background: url("https://plus.unsplash.com/premium_photo-1666863909125-3a01f038e71f?q=80&w=1386&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+  color: white;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-container input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-container input::placeholder {
+  color: #fff;
+}
+
+.input-container img {
+  position: absolute;
+  right: 24px;
+  top: 20%;
+  margin-top: 5px;
+  color: #fff;
+}
+
+.input-container a {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.input-container a:hover {
+  text-decoration: underline;
+}
+
+.submit-button {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(6, 6, 83);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 24px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+}
+.submit-button:hover {
+  background-color: rgb(61, 61, 224);
+}
+
+.register-link p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 250;
+}
+
+.register-link {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.register-link p a {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+.success {
+  color: rgb(0, 133, 0);
+  background-color: #fff;
+}
+
+.error {
+  color: rgb(243, 27, 27);
+  background: #ffffff;
+  text-shadow: 0 0 10px #ffffff;
+}
