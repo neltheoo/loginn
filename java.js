@@ -8,8 +8,8 @@
 document.querySelector("#login").addEventListener("submit", function (event) {
   event.preventDefault();
 
-  const user = document.getElementById("user").value;
-  const password = document.getElementById("password").value;
+  const user = document.getElementById("user").value.trim();
+  const password = document.getElementById("password").value.trim();
   const alerta = document.getElementById("alerta");
 
   /* Validação dos campos */
@@ -18,12 +18,15 @@ document.querySelector("#login").addEventListener("submit", function (event) {
     alerta.textContent =
       "sucesso: Todos os campos foram preenchidos corretamente!";
     alerta.className = "success";
-  } else if (user !== "admin" && password !== "12345")sss
-    alerta.textContent = "Errado: Usuário ou senha está incorreto";
+    return;
+  } else if (user === "" && password === "") {
+    alerta.textContent = "Errado: Precisa preencher todods os campos!";
     alerta.className = "error";
+    return;
   } else {
-    alerta.textContent = "Errado: você deve preencher todos os campos";
+    user != "admin" && password != "12345";
+    alerta.textContent = "Errado: Login não está correto!";
     alerta.className = "error";
+    return;
   }
-  return;
 });
